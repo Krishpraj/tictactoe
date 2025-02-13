@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+<title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+<dialog id="chooseopponent">
+    <h1>Welcome to Tic Tac Toe!</h1>
+    <p>This is a 2-player game.</p>
+    <p>Player 1 will get to choose their icon (X or O) first.</p>
+</dialog>
+
+<script>
+    const dialog = document.getElementById('chooseopponent');
+    dialog.showModal();
+
+    setTimeout(() => {
+        dialog.close();
+        var script = document.createElement('script');
+        script.type = 'module'; 
+        script.src = 'scripts.js';  
+        document.head.appendChild(script);
+    }, 2000);
+</script>
+
+    <dialog id="start-dialog">
+        <h1>Tic Tac Toe</h1>
+        <p>Choose your player</p>
+        <button id="player-x"> X </button>
+        <button id="player-o"> O </button>
+    </dialog>
+
+    <div id="container"></div>
+    <div id="message">Player X's turn</div>
+    <dialog id="dialog">
+        <p id="dialog-message"></p>
+        <button id="play-again">Play Again</button>
+    </dialog>
+
+    
+</body>
+</html>
