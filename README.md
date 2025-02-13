@@ -17,5 +17,5 @@ This is a modern and visually appealing Tic-Tac-Toe game featuring glowing anima
 ## 🚀 Installation & Usage
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/tictactoe-glow.git
+   git clone https://github.com/Krishpraj/tictactoe.git
    cd tictactoe-glow
